@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Movie CRUD App</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}"/>
+    </head>
+    <body>
+        <form action="/delete_movie/{{ movie.id }}" method="POST">
+            <h1>Delete Movie</h1>
+            <ul>
+                <li>
+                    <label for="id">Id</label>
+                    {{ movie.id }}
+                </li>
+                <li>
+                    <label for="title">Title</label>
+                    {{ movie.title }}
+                </li>
+                <li>
+                    <label for="director">Director</label>
+                    {{ movie.director }}
+                </li>
+                <li>
+                    <label for="genre">Genre</label>
+                    {{ movie.genre }}
+                </li>
+                <li>
+                    <label for="date">Date</label>
+                    {{ movie.date }}
+                </li>
+                <li>
+                    <label for="rating">Rating</label>
+                    {{ movie.rating }}
+                </li>
+            </ul>
+            <button type="submit">Delete</button>
+            <a href="/">Cancel</a>
+        </form>
+    </body>
+</html>

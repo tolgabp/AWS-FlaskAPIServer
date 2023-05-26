@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1a1a1a;
+    color: #1abc9c;
+    padding: 20px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #3498db;
+}
+
+form {
+    border: 1px solid #3498db;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #1a1a1a;
+}
+
+form ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+form li {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1abc9c;
+}
+
+form input[type="text"], form input[type="number"], form input[type="int"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3498db;
+    background-color: #1a1a1a;
+    color: #1abc9c;
+}
+
+form button {
+    background-color: #1a1a1a;
+    color: #1abc9c;
+    border: 1px solid #3498db;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #3498db;
+    color: #1a1a1a;
+}
+
+form a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+/* for index.html */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #3498db;
+}
+
+table th, table td {
+    padding: 10px;
+}
+
+table td a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+table td a:hover {
+    color: #3498db;
+}
+
+#add-movie-form {
+    margin-top: 20px;
+}
+
+#show-add-movie-form {
+    width: 100%;
+}
